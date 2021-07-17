@@ -24,7 +24,7 @@ def favicon():
 @app.errorhandler(404)
 def page_not_found(_):
     return render_template('error.html', theme=get_theme(), error_code=404,
-                           error_message='Тут ничего нет. Ну или я хочу чтоб вы так думали.')
+                           error_message='Тут ничего нет. Или я хочу чтоб вы так думали.')
 
 
 @app.errorhandler(500)
