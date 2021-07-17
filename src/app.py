@@ -40,7 +40,7 @@ def index():
 
 @app.route('/error')
 def error():
-    raise Exception
+    pass  # this will cause 500 error (also some traceback shit in logs but who cares)
 
 
 if __name__ == '__main__':
