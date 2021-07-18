@@ -38,6 +38,11 @@ def index():
     return render_template('index.html', theme=get_theme())
 
 
+@app.route('/nudes')
+def nudes():
+    return render_template('nudes.html', theme=get_theme())
+
+
 @app.route('/error')
 def error():
     pass  # this will cause 500 error (also some traceback shit in logs but who cares)

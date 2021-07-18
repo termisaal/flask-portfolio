@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Ага, размечтались{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nudes.css') }}">
+{% endblock %}
+{% block content %}
+    <iframe id="video-frame" class="unselectable" width="560" height="315" title="YouTube video player"
+            style="border-width: 6px; border-radius: 8px; border-style: solid"
+            src="https://www.youtube.com/embed/aYsgsSo1aow?autoplay=1&color=white&loop=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+            picture-in-picture" allowfullscreen></iframe>
+{% endblock %}
