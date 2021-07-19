@@ -3,9 +3,10 @@
 {% block title %}Ламихуза{% endblock %}
 {% block head %}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
 {% endblock %}
 {% block content %}
-    <div id="main-box" class="centered unselectable">
-        <b id="header" class="rainbow-text" style="font-size: 64px">Misaal</b>
+    <div id="main-box" class="centered unselectable" onload="console.log('asd')">
+        <b id="header" class="rainbow-text" style="font-size: 48px">Misaal</b>
     </div>
 {% endblock %}
